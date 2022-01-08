@@ -11,6 +11,6 @@ In backend dir run
 - create a .js file
 
 In frontend dir run
-- ng new <appname>
-- cd <appname>
-- ng g s <servicename>
+- ng new appname
+- cd appname
+- ng g s servicename
