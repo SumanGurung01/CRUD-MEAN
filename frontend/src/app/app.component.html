@@ -1,0 +1,17 @@
+<form #userData="ngForm" (ngSubmit)="getValues(userData.value)">
+    name : <input type="text" name="name" ngModel>
+    <br>
+    surname : <input type="text" name="surname" ngModel>
+    <br>
+    age : <input type="number" name="age" ngModel>
+    <br>
+    <button>Save</button>
+</form>
+<button (click)="receiveValues()">Receive Data</button>
+<div *ngFor="let data of receiveddata;">
+    <p>--------------------</p>
+    <p>{{data.name}}</p>
+    <p>{{data.surname}}</p>
+    <p>{{data.age}}</p>
+</div>
+<router-outlet></router-outlet>
