@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 
-dburl = "mongodb+srv://demo:demo@cluster0.gkysd.mongodb.net/data?retryWrites=true&w=majority"  //database link
+dburl = "mongodb+srv://<username>:<password>@cluster0.gkysd.mongodb.net/<databasename>?retryWrites=true&w=majority"  //database link
 
 mongoose.connect(dburl).then(()=>{   //connect to database
     console.log("Database Connected")},error=>{
